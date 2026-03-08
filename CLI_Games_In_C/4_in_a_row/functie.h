@@ -1,0 +1,11 @@
+int check(int **mat);
+void eliberare(int **mat);
+void init(int **mat);
+int verificare_jucator(int **mat);
+int verificare_robot(int **mat);
+void functie_robot(int **mat, int *pozi, int *pozj, int *e_ok);
+void verificare_castig_robot(int **mat, int *pozi, int *pozj);
+void afisare(int **mat);
+void punere_jucator(int **mat, int pozj,int *e_ok);
+void punere_robot(int **mat, int cnt1);
+void jucator2(int **mat, int pozj,int *e_ok);

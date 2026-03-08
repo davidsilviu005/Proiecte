@@ -1,0 +1,15 @@
+aloca_heap – creeaza si initializeaza un heap gol cu o capacitate data.
+swap_arb – schimba doua noduri de tip `TArb` (util pentru rearanjarea heap-ului).
+compare – compara doua noduri dupa frecventa; daca sunt egale, compara alfabetic numele.
+heap_introducere – reface proprietatea de heap dupa inserarea unui nod (urcare).
+heap_extragere – reface proprietatea de heap dupa extragere (coborare).
+inserare_heap – adauga un nod nou in heap si il insereaza corect.
+extragere_minim – extrage nodul cu cea mai mica frecventa (radacina heap-ului).
+aloca_arb – aloca un nod de arbore cu frecventa, nume si copii (stanga/dreapta).
+construieste_arbore – creeaza arborele prin combinarea nodurilor din heap.
+afisare_arbore – afiseaza arborele pe niveluri (BFS), in format „frecventa-nume”.
+eliberare_arbore – elibereaza recursiv memoria fiecarui nod din arbore.
+eliberare_heap – elibereaza vectorul de noduri si structura `THeap`.
+task2 – decodeaza un sir de biti intr-o secventa de cuvinte/frunze, parcurgand arborele.
+task3 – cauta un cuvant/frunza in arbore si returneaza codul său (sir de 0/1).
+task4 – construieste drumul (ca lista de noduri) de la radacina pana la o frunza data si returneaza lungimea acestuia.

@@ -1,0 +1,86 @@
+Funcții și scopul lor:
+
+creeaza_pagina()
+-Ce face: creează o pagină web cu ID, URL și descriere.
+-De ce: e folosită pentru a construi vectorul de pagini la început și pentru pagina implicită.
+
+distruge_pagina()
+-Ce face: eliberează memoria unei pagini.
+-De ce: evită memory leaks, important pentru Valgrind.
+
+creeaza_stiva()
+-Ce face: creează o stivă goală.
+-De ce: e folosită pentru a ține istoricul „înainte” și „înapoi” al taburilor.
+
+push()
+-Ce face: adaugă o pagină în vârful stivei.
+-De ce: folosită când navigăm la o pagină nouă sau folosim BACKWARD / FORWARD.
+
+pop()
+-Ce face: scoate și returnează pagina din vârful stivei.
+-De ce: pentru a merge înapoi/înainte în istoric.
+
+e_gol()
+-Ce face: verifică dacă o stivă e goală.
+-De ce: pentru a preveni accesul invalid în BACKWARD / FORWARD.
+
+curata_stiva()
+-Ce face: golește complet stiva.
+-De ce: se folosește când se încarcă o pagină nouă — istoricul „înainte” se șterge.
+
+distruge_stiva()
+-Ce face: curăță și eliberează stiva.
+-De ce: pentru eliberarea completă a memoriei unui tab.
+
+afiseaza_stiva()
+-Ce face: afișează URL-urile dintr-o stivă în ordine inversă.
+-De ce: pentru comanda PRINT_HISTORY.
+
+creeaza_tab()
+-Ce face: creează un tab nou, cu pagina implicită și stive goale.
+-De ce: folosit de NEW_TAB.
+
+distruge_tab()
+-Ce face: eliberează toate stivele și memoria unui tab.
+-De ce: se folosește în CLOSE și la final pentru cleanup.
+
+creeaza_browser()
+-Ce face: creează un browser cu o listă circulară de taburi și pagina implicită.
+-De ce: initializează structura principală a aplicației.
+
+gaseste_tab()
+-Ce face: caută un tab după ID.
+-De ce: folosit în OPEN și PRINT_HISTORY.
+
+tab_nou()
+-Ce face: adaugă un nou tab la finalul listei și îl setează ca activ.
+-De ce: implementare NEW_TAB.
+
+inchide_tab()
+-Ce face: închide tabul curent, cu excepția tabului 0.
+-De ce: implementare CLOSE.
+
+afiseaza_tab()
+-Ce face: afișează toate taburile începând cu cel curent și descrierea paginii curente.
+-De ce: implementare PRINT.
+
+afiseaza_istoric()
+-Ce face: afișează istoricul complet (inainte, pagina curentă, inapoi) al unui tab.
+-De ce: implementare PRINT_HISTORY.
+
+schimba_pagina()
+-Ce face: încarcă o pagină nouă în tabul curent, adăugând pagina curentă în istoricul „înapoi” și golind „înainte”.
+-De ce: implementare PAGE.
+
+inapoi()
+-Ce face: merge la pagina anterioară din istoric.
+-De ce: implementare BACKWARD.
+
+inainte()
+-Ce face: revine la o pagină recent vizitată după ce s-a folosit `BACKWARD`.
+-De ce: implementare FORWARD.
+
+În main()
+-Citire pagini din input -> creeaza_pagina
+-Executare comenzilor -> NEW_TAB, CLOSE, PAGE, BACKWARD, etc.
+-Eliberare memorie la final -> pentru pagini, taburi și browser.

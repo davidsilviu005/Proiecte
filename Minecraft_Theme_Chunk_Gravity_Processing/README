@@ -1,0 +1,46 @@
+1.chunk_place_block:
+
+Această funcție plasează un "bloc" la o anumită poziție (x, y, z) într-un "chunk" tridimensional (matrice 3D).
+Verifică dacă coordonatele date sunt valide (adică, se află în interiorul limitelor chunk-ului). Dacă sunt valide, înlocuiește valoarea la coordonatele respective cu caracterul block.
+Returnează chunk-ul modificat.
+
+2.chunk_fill_cuboid:
+
+Această funcție umple un volum cuboid (un cub cu dimensiuni width, height, și depth) cu un anumit tip de bloc (block).
+Primește două seturi de coordonate (x0, y0, z0) și (x1, y1, z1) care definesc colțurile opuse ale cuboidului.
+Calculează limitele minime și maxime ale acestui cuboid și plasează blocuri la fiecare coordonată din interiorul volumului.
+Folosește funcția chunk_place_block pentru a plasa fiecare bloc.
+
+3.chunk_fill_sphere:
+
+Această funcție umple o zonă sferică cu un bloc, având centrul la (x, y, z) și un radius specificat.
+Calculează limitele minime și maxime ale coordonatelor în jurul centrului sferic și iterează prin aceste coordonate.
+Verifică dacă fiecare punct se află în interiorul sferei (folosind formula distanței euclidiene) și, dacă da, plasează un bloc acolo, utilizând din nou funcția chunk_place_block.
+
+4.chunk_shell: 
+
+Creează un "coajă" în jurul blocurilor de tip target_block, înlocuind blocurile adiacente cu shell_block, dar doar dacă sunt în interiorul unui chunk valid.
+
+5.chunk_fill_xz: 
+
+Umple o regiune pe planul XZ (în adâncime și lățime) a chunk-ului, înlocuind toate blocurile de tip target_block cu un bloc block, folosind un algoritm de căutare pe stivă.
+
+6.chunk_fill: 
+
+Umple o regiune tridimensională a chunk-ului în jurul unui bloc de tip target_block, înlocuind-l cu block, folosind un algoritm recursiv.
+
+7.chunk_rotate_y: 
+
+Rotește un chunk în jurul axei Y, schimbând pozițiile blocurilor între coordonatele X și Z, iar Y rămâne neschimbat.
+
+8.chunk_apply_gravity: 
+Aplică gravitația asupra blocurilor din chunk, făcându-le să cadă până ajung la poziția cea mai joasă posibilă.
+
+9.chunk_encode: 
+
+Codifică un chunk de blocuri într-un format comprimat, folosind o tehnică de run-length encoding (RLE). Funcția parcurge fiecare bloc din chunk, grupează blocurile consecutive de același tip și le stochează împreună cu numărul lor de apariții într-un array. Rezultatul este o secvență de bytes care reprezintă chunk-ul într-o formă comprimată, iar lungimea codificată este returnată în argumentul length.
+
+10.chunk_decode: 
+
+Decodează un chunk comprimat (obținut cu chunk_encode) și reconstruiește chunk-ul original, reumplând fiecare poziție cu valorile corespunzătoare. Funcția parcurge secvența de bytes codificată, extrage tipul blocurilor și numărul de apariții, iar apoi reconstruiește chunk-ul în forma sa originală, respectând dimensiunile specificate (width, height, depth).
+

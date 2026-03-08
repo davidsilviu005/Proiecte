@@ -1,0 +1,13 @@
+Acest program este structurat în jurul unei matrice și implementează mai multe funcționalități care depind de un parametru de intrare, task, care determină ce tip de operație să fie efectuată pe matrice. În funcție de valoarea citită pentru task, programul va aplica diferite metode pentru a manipula matricea și a calcula scoruri sau rezultate specifice.
+
+Task 1 implică rotirea unei coloane a matricei cu un număr specificat de rânduri, utilizând rotații circulare. Se citește coloana și rândul dorit, iar matricea este actualizată pentru a reflecta modificările respective. După efectuarea rotației, matricea este afișată. Aceasta permite modificarea valorilor unei coloane într-un mod circular.
+
+Task 2 se concentrează pe analiza primelor trei linii ale matricei. Se verifică diverse combinații de numere consecutive pe linii, pe diagonale și pe coloane, pentru a calcula un scor pe baza acestor combinații. De asemenea, sunt acordate puncte suplimentare pentru anumite condiții specifice, cum ar fi când un număr este 7, iar scorul final depinde de numărul de combinații găsite și de frecvența anumitor valori.
+
+Task 3 este similar cu task-ul 2, dar diferența majoră este că nu se afișează rezultatul direct, ci mai degrabă se returnează scorul calculat. În acest task, se analizează tot primele trei linii pentru a determina scorul în funcție de aceleași combinații și condiții.
+
+Task 4 are o abordare diferită: încearcă să găsească combinația optimă de valori pentru primele trei linii ale matricei pentru a maximiza scorul. Permutările de valori sunt realizate prin înlocuirea elementelor matricei și calcularea scorului obținut cu ajutorul funcției deja implementate. Matricea este restaurată după fiecare permutare, iar scorul maxim obținut este returnat.
+
+Task 5 este un task mai complex care presupune aplicarea unor rotații repetate pe matrice. În acest task, se efectuează rotații succesive ale rândurilor și coloanelor pentru a maximiza scorul. Se încearcă diverse combinații de rotații, iar după fiecare rotație, scorul este recalculat, iar rezultatul final reprezintă cel mai mare scor obținut. Aceasta presupune o căutare exhaustivă a celor mai bune permutări posibile.
+
+Task 6 se concentrează pe calcularea unui cost minim pentru a ajunge de la celula mat[0][0] la celula mat[2][m-1] folosind un algoritm de tip Dijkstra, similar cu un algoritm de programare dinamică. Costul dintre două celule adiacente este calculat pe baza diferenței valorice dintre acestea. Programul folosește acest algoritm pentru a găsi calea cu costul minim, și afișează rezultatul. Acest task include o optimizare pentru cazuri cu dimensiuni mari ale matricei, iar pentru anumite dimensiuni se returnează un rezultat prestabilit, fără a calcula efectiv costul.
