@@ -1,0 +1,43 @@
+01-01-2025-07-00 | create_exam | JavaExam | 03-01-2025-09-00 | 03-01-2025-12-00
+01-01-2025-07-02 | create_exam | OOPExam | 04-01-2025-10-00 | 04-01-2025-13-00
+01-01-2025-07-05 | add_question | open_ended | JavaExam | Ana | 2 | 10 | Explain JVM | virtual machine
+01-01-2025-07-06 | add_question | fill_in_the_blank | JavaExam | Dan | 1 | 6 | Java is ___ typed | statically
+01-01-2025-07-07 | add_question | multiple_choice | JavaExam | Radu | 3 | 8 | Which is a keyword? A)new B)class C)func D)call | B
+01-01-2025-07-08 | add_question | open_ended | JavaExam | Alex | 1 | 7 | What is a reference? | pointer-like value
+01-01-2025-07-09 | add_question | fill_in_the_blank | JavaExam | Vlad | 2 | 5 | The ___ operator allocates memory | new
+01-01-2025-07-10 | add_question | multiple_choice | JavaExam | Ana | 2 | 4 | Choose type A)int B)table C)stack D)node | A
+01-01-2025-07-12 | add_question | open_ended | OOPExam | Mihai | 1 | 10 | Define OOP | object oriented programming
+01-01-2025-07-13 | add_question | fill_in_the_blank | OOPExam | Ioana | 1 | 8 | ___ hides implementation | encapsulation
+01-01-2025-07-14 | add_question | multiple_choice | OOPExam | Paul | 2 | 6 | Is polymorphism OOP? A)Yes B)No C)Maybe D)All | A
+01-01-2025-07-15 | add_question | open_ended | OOPExam | Ana | 3 | 9 | Define inheritance | mechanism of reuse
+01-01-2025-07-16 | add_question | fill_in_the_blank | OOPExam | Dan | 2 | 7 | ___ represents behaviour | method
+01-01-2025-07-20 | register_student | Alice | 321CB
+01-01-2025-07-21 | register_student | Bob | 322CC
+01-01-2025-07-22 | register_student | Charlie | 323AA
+01-01-2025-07-23 | register_student | Diana | 324BB
+01-01-2025-07-24 | register_student | Edward | 325CA
+01-01-2025-07-30 | list_questions_history | JavaExam
+01-01-2025-07-31 | list_questions_history | OOPExam
+01-01-2025-07-32 | print_exam | JavaExam
+01-01-2025-07-33 | print_exam | OOPExam
+01-01-2025-07-40 | add_question | multiple_choice | JavaExam | Maria | 2 | 4 | Choose boolean A)true B)1 C)yes D)T | A
+01-01-2025-07-41 | add_question | fill_in_the_blank | OOPExam | Vlad | 1 | 6 | ___ defines object state | field
+01-01-2025-07-45 | list_questions_history | JavaExam
+01-01-2025-07-46 | list_questions_history | OOPExam
+01-01-2025-07-50 | print_exam | JavaExam
+01-01-2025-07-51 | print_exam | OOPExam
+03-01-2025-09-05 | submit_exam | JavaExam | Alice | staticaly | pointer-like value | A | A | virtual machine | new | B
+03-01-2025-09-10 | submit_exam | JavaExam | Bob | static | wrong | D | A | VM | ne | B
+03-01-2025-09-15 | submit_exam | JavaExam | Charlie | statically | pointer-like value | A | A | virtual machine | new | A
+03-01-2025-09-20 | show_student_score | Alice | JavaExam
+03-01-2025-09-21 | show_student_score | Bob | JavaExam
+03-01-2025-09-22 | show_student_score | Charlie | JavaExam
+03-01-2025-09-25 | generate_report | JavaExam
+04-01-2025-10-05 | submit_exam | OOPExam | Alice | object oriented programming | field | encapsulatio | A | method | mechanism of reuse
+04-01-2025-10-10 | submit_exam | OOPExam | Diana | oop | field | encapsulation | B | meth | inherit
+04-01-2025-10-15 | submit_exam | OOPExam | Edward | object oriented programming | field | encapsulation | A | method | mechanism of reuse
+04-01-2025-10-20 | show_student_score | Alice | OOPExam
+04-01-2025-10-21 | show_student_score | Diana | OOPExam
+04-01-2025-10-22 | show_student_score | Edward | OOPExam
+04-01-2025-10-30 | generate_report | OOPExam
+04-01-2025-10-40 | exit

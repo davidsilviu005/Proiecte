@@ -1,0 +1,6 @@
+01-01-2025-08-00 | create_exam | SortingExam | 05-01-2025-10-00 | 05-01-2025-12-00
+01-01-2025-08-10 | add_question | multiple_choice | SortingExam | Alex | 2 | 5 | What is 2+2? A)1 B)2 C)3 D)4 | D
+01-01-2025-08-12 | add_question | open_ended | SortingExam | Ana | 1 | 7 | Define class | blueprint
+01-01-2025-08-14 | add_question | fill_in_the_blank | SortingExam | Vlad | 1 | 6 | OOP stands for ___ | object oriented programming
+01-01-2025-08-20 | print_exam | SortingExam
+01-01-2025-08-30 | exit

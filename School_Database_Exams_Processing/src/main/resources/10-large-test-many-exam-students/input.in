@@ -1,0 +1,28 @@
+01-03-2025-08-00 | create_exam | Prog1 | 03-03-2025-10-00 | 03-03-2025-12-00
+01-03-2025-08-01 | create_exam | Prog2 | 04-03-2025-10-00 | 04-03-2025-12-00
+01-03-2025-08-10 | add_question | open_ended | Prog1 | John | 1 | 6 | What is Java? | language
+01-03-2025-08-11 | add_question | multiple_choice | Prog1 | John | 2 | 4 | Pick operator A)+ B)variable C)loop D)class | A
+01-03-2025-08-12 | add_question | fill_in_the_blank | Prog1 | John | 1 | 5 | JVM executes ___ | bytecode
+01-03-2025-08-20 | add_question | fill_in_the_blank | Prog2 | John | 1 | 5 | ___ creates objects | constructor
+01-03-2025-08-21 | add_question | multiple_choice | Prog2 | John | 2 | 4 | OOP? A)Java B)SQL C)CSS D)HTML | A
+01-03-2025-08-22 | add_question | open_ended | Prog2 | John | 3 | 7 | Define class | blueprint
+01-03-2025-09-00 | register_student | Max | X1
+01-03-2025-09-01 | register_student | Sara | X2
+01-03-2025-09-02 | register_student | Leo | X3
+01-03-2025-09-10 | print_exam | Prog1
+01-03-2025-09-11 | print_exam | Prog2
+03-03-2025-10-05 | submit_exam | Prog1 | Max | bytecode | language | A
+03-03-2025-10-10 | submit_exam | Prog1 | Sara | bytcode | lang | B
+03-03-2025-10-15 | submit_exam | Prog1 | Leo | bytecode | language | A
+03-03-2025-10-20 | show_student_score | Max | Prog1
+03-03-2025-10-21 | show_student_score | Sara | Prog1
+03-03-2025-10-22 | show_student_score | Leo | Prog1
+03-03-2025-10-25 | generate_report | Prog1
+04-03-2025-10-05 | submit_exam | Prog2 | Max | constructor | A | blueprint
+04-03-2025-10-10 | submit_exam | Prog2 | Sara | construcr | A | blue
+04-03-2025-10-15 | submit_exam | Prog2 | Leo | constructor | A | blueprint
+04-03-2025-10-20 | show_student_score | Max | Prog2
+04-03-2025-10-21 | show_student_score | Sara | Prog2
+04-03-2025-10-22 | show_student_score | Leo | Prog2
+04-03-2025-10-25 | generate_report | Prog2
+04-03-2025-10-30 | exit

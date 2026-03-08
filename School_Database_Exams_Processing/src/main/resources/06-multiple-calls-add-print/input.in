@@ -1,0 +1,8 @@
+01-01-2025-08-00 | create_exam | MixExam | 02-01-2025-10-00 | 02-01-2025-13-00
+01-01-2025-08-10 | add_question | open_ended | MixExam | Ana | 2 | 10 | What is Java? | language
+01-01-2025-08-12 | print_exam | MixExam
+01-01-2025-08-20 | add_question | multiple_choice | MixExam | Bob | 1 | 5 | Which letter comes first? A)C B)B C)A D)D | C
+01-01-2025-08-22 | list_questions_history | MixExam
+01-01-2025-08-30 | add_question | fill_in_the_blank | MixExam | Mihai | 3 | 7 | ___ is used to build objects | constructor
+01-01-2025-08-40 | print_exam | MixExam
+01-01-2025-08-50 | exit

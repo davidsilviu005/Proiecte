@@ -1,0 +1,6 @@
+6.0 | Java is ___ typed | 1 | statically
+7.0 | What is a reference? | 1 | pointer-like value
+4.0 | Choose type A)int B)table C)stack D)node | 2 | A
+10.0 | Explain JVM | 2 | virtual machine
+5.0 | The ___ operator allocates memory | 2 | new
+8.0 | Which is a keyword? A)new B)class C)func D)call | 3 | B

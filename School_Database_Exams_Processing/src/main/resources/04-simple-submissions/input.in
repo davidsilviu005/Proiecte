@@ -1,0 +1,13 @@
+01-01-2025-10-00 | create_exam | Basics | 01-01-2025-10-30 | 01-01-2025-12-00
+01-01-2025-10-05 | add_question | open_ended | Basics | Ana | 2 | 10 | Define code | instructions
+01-01-2025-10-10 | add_question | fill_in_the_blank | Basics | Bob | 1 | 5 | Java is ___ typed | statically
+01-01-2025-10-15 | add_question | multiple_choice | Basics | Mihai | 1 | 5 | 1+1=? A)1 B)2 C)3 D)4 | B
+01-01-2025-10-20 | register_student | Alice | 321CB
+01-01-2025-10-21 | register_student | Dan | 322CC
+01-01-2025-10-25 | print_exam | Basics
+01-01-2025-10-40 | submit_exam | Basics | Alice | B | staticaly | instructions
+01-01-2025-10-50 | submit_exam | Basics | Dan | A | sss | wrong
+01-01-2025-10-55 | show_student_score | Alice | Basics
+01-01-2025-10-56 | show_student_score | Dan | Basics
+01-01-2025-11-00 | generate_report | Basics
+01-01-2025-11-05 | exit

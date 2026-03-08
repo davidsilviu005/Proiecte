@@ -1,0 +1,57 @@
+01-02-2025-08-00 | create_exam | Theory | 05-02-2025-09-00 | 05-02-2025-12-00
+01-02-2025-08-01 | create_exam | Practice | 06-02-2025-09-00 | 06-02-2025-12-00
+01-02-2025-08-02 | create_exam | Mixed | 07-02-2025-09-00 | 07-02-2025-13-00
+01-02-2025-08-10 | add_question | open_ended | Theory | A1 | 1 | 5 | Explain OOP | oop defines objects
+01-02-2025-08-11 | add_question | fill_in_the_blank | Theory | A2 | 1 | 6 | A class has ___ | fields
+01-02-2025-08-12 | add_question | multiple_choice | Theory | A3 | 2 | 4 | Which is OOP? A)Polymorphism B)SQL C)HTML D)CSS | A
+01-02-2025-08-13 | add_question | open_ended | Theory | A4 | 1 | 5 | Define object | entity
+01-02-2025-08-14 | add_question | fill_in_the_blank | Theory | A5 | 2 | 7 | ___ allows code reuse | inheritance
+01-02-2025-08-15 | add_question | open_ended | Theory | A6 | 3 | 8 | Define encapsulation | hides data
+01-02-2025-08-16 | add_question | multiple_choice | Theory | A7 | 2 | 4 | Pick type A)int B)new C)func D)code | A
+01-02-2025-08-17 | add_question | fill_in_the_blank | Theory | A8 | 1 | 6 | Code is written in ___ | classes
+01-02-2025-08-18 | add_question | open_ended | Theory | A9 | 3 | 8 | Define abstraction | hide complexity
+01-02-2025-08-19 | add_question | multiple_choice | Theory | A0 | 2 | 4 | Choose correct A)Class B)Dog C)Tree D)Water | A
+01-02-2025-08-30 | add_question | open_ended | Practice | B1 | 1 | 6 | Explain method | function
+01-02-2025-08-31 | add_question | multiple_choice | Practice | B2 | 1 | 4 | Loop? A)for B)if C)case D)switch | A
+01-02-2025-08-32 | add_question | fill_in_the_blank | Practice | B3 | 2 | 7 | Arrays store ___ | elements
+01-02-2025-08-33 | add_question | multiple_choice | Practice | B4 | 3 | 5 | Pick data type A)int B)loop C)func D)call | A
+01-02-2025-08-34 | add_question | open_ended | Practice | B5 | 1 | 6 | Define loop | repetition
+01-02-2025-08-35 | add_question | fill_in_the_blank | Practice | B6 | 1 | 7 | ___ indexes start at 0 | arrays
+01-02-2025-08-36 | add_question | open_ended | Practice | B7 | 2 | 5 | Explain variable | storage
+01-02-2025-08-37 | add_question | multiple_choice | Practice | B8 | 2 | 4 | Which is literal? A)42 B)var C)int D)ref | A
+01-02-2025-08-50 | add_question | multiple_choice | Mixed | C1 | 1 | 4 | True? A)True B)False C)Maybe D)None | A
+01-02-2025-08-51 | add_question | open_ended | Mixed | C2 | 2 | 7 | Define class | blueprint
+01-02-2025-08-52 | add_question | fill_in_the_blank | Mixed | C3 | 1 | 5 | Java uses ___ | bytecode
+01-02-2025-08-53 | add_question | open_ended | Mixed | C4 | 2 | 6 | Define variable | container
+01-02-2025-08-54 | add_question | multiple_choice | Mixed | C5 | 3 | 8 | Arrays are? A)Fixed-size B)Dynamic C)Text D)None | A
+01-02-2025-08-55 | add_question | fill_in_the_blank | Mixed | C6 | 2 | 6 | JVM executes ___ | bytecode
+01-02-2025-09-00 | register_student | Anna | G1
+01-02-2025-09-01 | register_student | Ben | G2
+01-02-2025-09-02 | register_student | Clara | G3
+01-02-2025-09-03 | register_student | Daniel | G4
+01-02-2025-09-04 | register_student | Emma | G5
+01-02-2025-09-05 | register_student | Felix | G6
+01-02-2025-09-06 | register_student | Gina | G7
+01-02-2025-09-07 | register_student | Hugo | G8
+01-02-2025-09-10 | print_exam | Theory
+01-02-2025-09-11 | print_exam | Practice
+01-02-2025-09-12 | print_exam | Mixed
+05-02-2025-09-10 | submit_exam | Theory | Anna | field | classes | entity | oop defines objects | A | A | A | inherit | hide complexity | hides data
+05-02-2025-09-11 | submit_exam | Theory | Ben | filds | class | ent | oop | B | A | A | inh | hide | hide data
+05-02-2025-09-12 | submit_exam | Theory | Clara | fields | classes | entity | oop defines objects | A | A | A | inheritance | hide complexity | hides data
+05-02-2025-09-13 | submit_exam | Theory | Daniel | f | cl | obj | wrong | C | B | A | inc | abs | hides
+05-02-2025-09-14 | submit_exam | Theory | Emma | fiels | classes | entity | oop defines objects | A | A | A | inheritance | hide complex | hides data
+05-02-2025-09-15 | submit_exam | Theory | Felix | fields | classs | ent | oop | A | A | C | inheritance | hide complexity | hides
+05-02-2025-09-16 | submit_exam | Theory | Gina | fields | classes | entity | oop defines objects | A | A | A | inheritance | hide complexity | hides data
+05-02-2025-09-17 | submit_exam | Theory | Hugo | fi | cla | e | o | A | D | B | inherit | abs | h
+05-02-2025-09-20 | generate_report | Theory
+06-02-2025-09-10 | submit_exam | Practice | Anna | repetition | function | A | arrays | elements | storage | A | A
+06-02-2025-09-11 | submit_exam | Practice | Ben | repeat | func | B | array | elemens | var | B | B
+06-02-2025-09-12 | submit_exam | Practice | Clara | repetition | function | A | arrays | elements | storage | A | A
+06-02-2025-09-13 | submit_exam | Practice | Daniel | rep | wrong | D | a | el | st | C | B
+06-02-2025-09-20 | generate_report | Practice
+07-02-2025-09-10 | submit_exam | Mixed | Anna | bytecde | A | blueprint | container | bytecode | A
+07-02-2025-09-11 | submit_exam | Mixed | Emma | bytecode | A | blueprint | container | bytecode | A
+07-02-2025-09-12 | submit_exam | Mixed | Hugo | bytecode | B | blue | cont | bytecode | A
+07-02-2025-09-20 | generate_report | Mixed
+07-02-2025-09-30 | exit

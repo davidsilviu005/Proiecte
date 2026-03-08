@@ -1,0 +1,22 @@
+01-01-2025-07-00 | create_exam | FullExam | 03-01-2025-09-00 | 03-01-2025-12-00
+01-01-2025-07-05 | add_question | open_ended | FullExam | Ana | 2 | 10 | Explain JVM | virtual machine
+01-01-2025-07-06 | add_question | fill_in_the_blank | FullExam | Dan | 1 | 6 | Java supports ___ inheritance | single
+01-01-2025-07-07 | add_question | multiple_choice | FullExam | Radu | 3 | 8 | Pick keyword A)this B)new C)class D)func | C
+01-01-2025-07-08 | add_question | open_ended | FullExam | Alex | 1 | 7 | Define object | entity
+01-01-2025-07-09 | add_question | fill_in_the_blank | FullExam | Vlad | 2 | 5 | ___ stores object state | field
+01-01-2025-07-10 | list_questions_history | FullExam
+01-01-2025-07-11 | print_exam | FullExam
+01-01-2025-07-15 | register_student | Mihai | 321CB
+01-01-2025-07-16 | register_student | Ioana | 322CA
+01-01-2025-07-17 | register_student | Paul | 323CD
+01-01-2025-07-20 | add_question | multiple_choice | FullExam | Alina | 2 | 4 | Is Java OOP? A)Yes B)No C)Maybe D)Sometimes | A
+01-01-2025-07-21 | list_questions_history | FullExam
+01-01-2025-07-22 | print_exam | FullExam
+03-01-2025-09-10 | submit_exam | FullExam | Mihai | entity | singl | virtual machine | A | fied | C
+03-01-2025-09-20 | submit_exam | FullExam | Ioana | enti | single | wrong | D | field | A
+03-01-2025-09-40 | submit_exam | FullExam | Paul | object | s | virtual machine | A | field | A
+03-01-2025-09-50 | show_student_score | Mihai | FullExam
+03-01-2025-09-51 | show_student_score | Ioana | FullExam
+03-01-2025-09-52 | show_student_score | Paul | FullExam
+03-01-2025-09-55 | generate_report | FullExam
+03-01-2025-10-00 | exit

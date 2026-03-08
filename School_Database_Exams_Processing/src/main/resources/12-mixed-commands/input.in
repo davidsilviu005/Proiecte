@@ -1,0 +1,51 @@
+01-01-2025-07-00 | create_exam | AlphaExam | 03-01-2025-08-15 | 03-01-2025-13-00
+01-01-2025-07-01 | create_exam | BetaExam | 04-01-2025-09-00 | 04-01-2025-14-00
+01-01-2025-07-05 | add_question | open_ended | AlphaExam | Ana | 2 | 10 | Describe OOP | object oriented programming
+01-01-2025-07-06 | add_question | fill_in_the_blank | AlphaExam | Dan | 1 | 6 | Java is ___ typed | statically
+01-01-2025-07-10 | print_exam | AlphaExam
+01-01-2025-07-12 | add_question | multiple_choice | AlphaExam | Radu | 3 | 4 | Which is an OOP pillar? A)HTML B)Encapsulation C)CSS D)XML | B
+01-01-2025-07-13 | list_questions_history | AlphaExam
+01-01-2025-07-20 | add_question | multiple_choice | BetaExam | Alex | 1 | 5 | 2+2=? A)1 B)2 C)3 D)4 | D
+01-01-2025-07-21 | add_question | fill_in_the_blank | BetaExam | Mihai | 2 | 8 | JVM runs ___ | bytecode
+01-01-2025-07-22 | print_exam | BetaExam
+01-01-2025-07-30 | register_student | Alice | G1
+01-01-2025-07-31 | register_student | Bob | G2
+01-01-2025-07-32 | register_student | Carla | G3
+01-01-2025-07-40 | add_question | open_ended | AlphaExam | Vlad | 1 | 7 | What is a class? | blueprint
+01-01-2025-07-41 | add_question | open_ended | BetaExam | Ioana | 3 | 9 | Define inheritance | reuse mechanism
+01-01-2025-07-45 | list_questions_history | AlphaExam
+01-01-2025-07-46 | list_questions_history | BetaExam
+01-01-2025-07-48 | print_exam | AlphaExam
+01-01-2025-07-49 | print_exam | BetaExam
+01-01-2025-08-00 | register_student | Diana | G4
+01-01-2025-08-01 | register_student | Eric | G5
+01-01-2025-08-10 | add_question | fill_in_the_blank | AlphaExam | Maria | 1 | 5 | ___ hides details | encapsulation
+01-01-2025-08-12 | list_questions_history | AlphaExam
+01-01-2025-08-15 | print_exam | AlphaExam
+01-01-2025-08-16 | print_exam | BetaExam
+03-01-2025-08-30 | submit_exam | AlphaExam | Alice | statically | blueprint | encapsulation | object oriented programming | B
+03-01-2025-08-31 | show_student_score | Alice | AlphaExam
+03-01-2025-09-10 | submit_exam | AlphaExam | Bob | staticaly | blueprit | encapsulatio | oop | B
+03-01-2025-09-12 | submit_exam | AlphaExam | Carla | statically | blueprint | encapsulation | object oriented programming | B
+03-01-2025-09-20 | generate_report | AlphaExam
+03-01-2025-09-30 | submit_exam | AlphaExam | Diana | static | blu | encap | wrong | D
+03-01-2025-09-40 | submit_exam | AlphaExam | Eric | statically | blueprint | encapsulation | object oriented programming | B
+03-01-2025-09-45 | show_student_score | Bob | AlphaExam
+03-01-2025-09-46 | show_student_score | Carla | AlphaExam
+03-01-2025-09-47 | show_student_score | Diana | AlphaExam
+03-01-2025-09-48 | show_student_score | Eric | AlphaExam
+03-01-2025-10-00 | generate_report | AlphaExam
+04-01-2025-09-00 | submit_exam | BetaExam | Carla | D | bytecode | reuse mechanism
+04-01-2025-09-01 | show_student_score | Carla | BetaExam
+04-01-2025-10-10 | submit_exam | BetaExam | Alice | D | bytecode | reuse mechanism
+04-01-2025-10-12 | submit_exam | BetaExam | Diana | B | byte | mech
+04-01-2025-10-20 | generate_report | BetaExam
+04-01-2025-10-30 | submit_exam | BetaExam | Eric | D | bytecode | reuse mechanism
+04-01-2025-10-35 | submit_exam | BetaExam | Bob | D | code | wrong
+04-01-2025-10-40 | print_exam | BetaExam
+04-01-2025-10-45 | show_student_score | Alice | BetaExam
+04-01-2025-10-46 | show_student_score | Diana | BetaExam
+04-01-2025-10-47 | show_student_score | Eric | BetaExam
+04-01-2025-10-48 | show_student_score | Bob | BetaExam
+04-01-2025-11-00 | generate_report | BetaExam
+04-01-2025-11-30 | exit

@@ -1,0 +1,15 @@
+01-01-2025-08-00 | create_exam | RepoExam | 03-01-2025-09-00 | 03-01-2025-12-00
+01-01-2025-08-05 | add_question | multiple_choice | RepoExam | Ana | 1 | 5 | 1+1=? A)1 B)2 C)3 D)4 | B
+01-01-2025-08-06 | add_question | open_ended | RepoExam | Ana | 2 | 10 | Define OOP | object oriented programming
+01-01-2025-09-00 | register_student | Alice | 321
+01-01-2025-09-01 | register_student | Bob | 322
+01-01-2025-09-02 | register_student | Charlie | 323
+01-01-2025-09-03 | register_student | Diana | 324
+01-01-2025-09-10 | print_exam | RepoExam
+03-01-2025-09-05 | submit_exam | RepoExam | Alice | B | object oriented programming
+03-01-2025-09-06 | submit_exam | RepoExam | Charlie | A | obj
+03-01-2025-09-10 | generate_report | RepoExam
+03-01-2025-09-20 | submit_exam | RepoExam | Bob | B | oop
+03-01-2025-09-30 | submit_exam | RepoExam | Diana | D | wrong
+03-01-2025-10-00 | generate_report | RepoExam
+03-01-2025-10-10 | exit

@@ -1,0 +1,6 @@
+01-01-2025-09-00 | create_exam | POOTest | 01-02-2025-09-00 | 01-02-2025-12-00
+01-01-2025-09-10 | add_question | open_ended | POOTest | Mihai | 2 | 10 | Define OOP | paradigm based on objects
+01-01-2025-09-10 | add_question | multiple_choice | POOTest | Ana | 1 | 5 | Which pillar is not OOP? A)Encapsulation B)Inheritance C)Polymorphism D)Compilation | D
+01-01-2025-09-20 | add_question | fill_in_the_blank | POOTest | Bogdan | 3 | 8 | ___ hides implementation details | encapsulation
+01-01-2025-09-25 | list_questions_history | POOTest
+01-01-2025-09-30 | exit
