@@ -1,0 +1,70 @@
+Task 1:
+->Parcurge un vector de numere
+->Ignora numerele impare.
+->Pentru cele pare, le roteste la stânga pana:
+  ->Devine 1 - le ignora
+  ->Sau face 32 de rotatii fara sa ajunga la 1 - le pastreaza
+->Copiaza doar aceste numere (care nu devin 1 dupa 32 de rotatii) intr-un alt vector
+->La final, salveaza cate astfel de numere a copiat
+
+Task 2:
+-Subtask 1:
+  ->Parcurge o lista de structuri de cate 36 de octeti
+  ->La fiecare structura:
+  ->Verifica daca data (zi, luna, an) este valida:
+     -Anul intre 1990 si 2030
+     -Luna intre 1 si 12
+     -Ziua potrivita pentru luna (fiecare luna are un maxim de zile)
+  ->Daca data e valida, seteaza `[esi+31]` la `1`
+  ->Daca nu, il lasa la `0`
+  ->Trecem la urmatoarea structura, pana se termina cele `ecx` inregistrari
+-Subtask 2:
+  ->Functia compare:
+    -Compara doua structuri (v[i] si v[j]) pentru a decide daca trebuie schimbate
+    -Criterii de comparatie (in ordine):
+        -Validitate: evenimentele "valide" vin primele
+        -Data: sortare cronologica
+        -Nume: in ordine lexicografica, daca datele sunt egale
+    -Returneaza 1 daca trebuie facut swap, altfel 0
+  ->Functia swap:
+    -Interschimba doua structuri de 36 de bytes, cate un byte pe rand.
+  ->Functia sort_events:
+    -Sorteaza vectorul de evenimente, folosind sortarea cu for in for:
+        -Parcurge toate perechile (i, j) cu j > i
+        -Daca functia compare este 1, atunci se apeleaza functia swap
+        -Astfel, evenimentele "mai mici" urca in fata
+
+->Task 3:
+  ->Proceseaza sirul de caractere in grupuri de cate 3 octeti
+  ->Fiecare 3 biti se transforma in 4 caractere ASCII, folosite pentru reprezentarea datelor binare
+  ->Pentru fiecare grup:
+    -Extrage 6 biti din cei 3 octeti in 4 bucati de cate 6 biti
+    -Fiecare valoare de 6 biti este folosita ca index in tabelul alphabet, pentru a obtine un caracter
+    -Scrie cei 4 caractere in zona de iesire, avanseaza cu 3 în esi, 4 în edi
+  ->Repeta pana cand s-au procesat toti octetii
+  
+->Task 4:
+-check_row(char* sudoku, int row)
+    -Verifica daca toate cifrele din randul row:
+        -Sunt intre 1 si 9
+        -Nu se repeta
+    -Returneaza:
+        1 - daca randul e valid
+        2 - daca e invalid
+-check_column(char* sudoku, int column)
+    -Verifica daca toate cifrele din coloana column:
+        -Sunt intre 1 si 9
+        -Nu se repeta
+    -Returneaza:
+        1 - daca coloana e valid
+        2 - daca e invalid
+-check_box(char* sudoku, int box)
+    -Primeste un pointer la tabla si indexul unui box de dimensiuni 3x3
+    -Determina randul si coloana de start al box-ului
+    -Verifica daca toate cele 9 pozitii din acea caseta:
+        -Contin cifre valide, fara repetari
+    -Returneaza:
+        1 - daca caseta e valida
+        2 - daca nu
+        
+Scuze daca am depasit putin limita de 80 de caractere pe rand :(
