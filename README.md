@@ -6,9 +6,11 @@ This repository contains a collection of university and personal projects develo
 The repository currently includes projects and archives related to:
 - C programming
 - Python
+- Java
 - MATLAB / Octave
 - Assembly
 - Data Structures and Algorithms
+- OOP Concepts
 - University coursework and personal practice projects
 
 ## Purpose
@@ -25,9 +27,6 @@ The main goal of this repository is to showcase my technical development through
 - MATLAB / Octave
 - Assembly
 - Java
-
-## Notes
-Some projects are uploaded as `.zip` archives, while others are available as folders. Over time, I plan to organize the repository further by adding clearer project descriptions, usage instructions, and separate documentation for each project.
 
 ## About me
 I am a Computer Science student with hands-on experience in academic and personal software projects. I am interested in software development, algorithms, and continuously improving my technical skills through practical work.
