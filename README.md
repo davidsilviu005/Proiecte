@@ -24,7 +24,7 @@ The main goal of this repository is to showcase my technical development through
 - Python
 - MATLAB / Octave
 - Assembly
-- Java (in other projects outside this repository)
+- Java
 
 ## Notes
 Some projects are uploaded as `.zip` archives, while others are available as folders. Over time, I plan to organize the repository further by adding clearer project descriptions, usage instructions, and separate documentation for each project.
