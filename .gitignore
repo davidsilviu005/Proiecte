@@ -1,0 +1,12 @@
+# Python runtime files
+**/__pycache__/
+*.py[cod]
+
+# Local application data
+/Smart_Assistant/smart_study.db
+/Python_Games_interface/scores.json
+
+# Local build output
+/chess/chess_engine
+/chess/chess_engine.exe
+**/out/

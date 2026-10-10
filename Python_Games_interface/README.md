@@ -2,6 +2,8 @@
 
 A Tkinter menu for launching several small Python games from one desktop window.
 
+<img src="../docs/images/python-games-menu.png" width="360" alt="Python games launcher with six game buttons">
+
 ## Included games
 
 - Tic Tac Toe
@@ -15,4 +17,10 @@ The folder also contains a typing speed test and a leaderboard interface. Games 
 
 ## Run
 
-From this folder, run `python game_menu.py` with a Python installation that includes Tkinter. The menu launches each game as a separate Python process. You can also run an individual game file directly.
+With a Python installation that includes Tkinter, open a terminal in this folder and run:
+
+```sh
+python game_menu.py
+```
+
+The menu launches each game as a separate Python process. You can also run an individual game file directly. The leaderboard creates `scores.json` locally; it is ignored by Git so personal scores are not committed.

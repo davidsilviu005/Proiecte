@@ -2,6 +2,10 @@
 
 A Python desktop application for organizing study tasks and notes. Its Tkinter interface has separate Tasks and Notes tabs, while SQLite stores the data locally.
 
+![Smart Study Assistant tasks view with a sample task](../docs/images/smart-study-assistant.png)
+
+*Screenshot captured with demonstration data.*
+
 ## Main parts
 
 - `app.py` starts the interface and opens the database.
@@ -13,4 +17,10 @@ A Python desktop application for organizing study tasks and notes. Its Tkinter i
 
 ## Run
 
-Run `python app.py` from this folder. Tkinter and SQLite are part of a typical Python installation. For note summarization, install `transformers` and `torch`; the rest of the app can run without them. The optional task parser requires the `openai` package, an `OPENAI_API_KEY`, and compatibility with the API call used in that file.
+From this folder, run:
+
+```sh
+python app.py
+```
+
+Use a Python installation with Tkinter. The application creates a local `smart_study.db` file on first run; this file is ignored by Git so your notes and tasks stay local. For note summarization, install `transformers` and `torch` with `python -m pip install transformers torch`; the rest of the app can run without them. The optional task parser requires the `openai` package, an `OPENAI_API_KEY`, and compatibility with the API call used in that file.
