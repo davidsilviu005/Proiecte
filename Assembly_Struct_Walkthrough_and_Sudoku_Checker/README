@@ -1,70 +1,44 @@
 Task 1:
-->Parcurge un vector de numere
-->Ignora numerele impare.
-->Pentru cele pare, le roteste la stânga pana:
-  ->Devine 1 - le ignora
-  ->Sau face 32 de rotatii fara sa ajunga la 1 - le pastreaza
-->Copiaza doar aceste numere (care nu devin 1 dupa 32 de rotatii) intr-un alt vector
-->La final, salveaza cate astfel de numere a copiat
+-> Iterates through an array of numbers.
+-> Ignores odd numbers.
+-> Rotates each even number left until:
+  -> It becomes 1, in which case it is ignored; or
+  -> It has been rotated 32 times without becoming 1, in which case it is kept.
+-> Copies only the retained numbers to another array.
+-> Stores the number of copied values at the end.
 
 Task 2:
--Subtask 1:
-  ->Parcurge o lista de structuri de cate 36 de octeti
-  ->La fiecare structura:
-  ->Verifica daca data (zi, luna, an) este valida:
-     -Anul intre 1990 si 2030
-     -Luna intre 1 si 12
-     -Ziua potrivita pentru luna (fiecare luna are un maxim de zile)
-  ->Daca data e valida, seteaza `[esi+31]` la `1`
-  ->Daca nu, il lasa la `0`
-  ->Trecem la urmatoarea structura, pana se termina cele `ecx` inregistrari
--Subtask 2:
-  ->Functia compare:
-    -Compara doua structuri (v[i] si v[j]) pentru a decide daca trebuie schimbate
-    -Criterii de comparatie (in ordine):
-        -Validitate: evenimentele "valide" vin primele
-        -Data: sortare cronologica
-        -Nume: in ordine lexicografica, daca datele sunt egale
-    -Returneaza 1 daca trebuie facut swap, altfel 0
-  ->Functia swap:
-    -Interschimba doua structuri de 36 de bytes, cate un byte pe rand.
-  ->Functia sort_events:
-    -Sorteaza vectorul de evenimente, folosind sortarea cu for in for:
-        -Parcurge toate perechile (i, j) cu j > i
-        -Daca functia compare este 1, atunci se apeleaza functia swap
-        -Astfel, evenimentele "mai mici" urca in fata
+- Subtask 1:
+  -> Iterates through a list of 36-byte structures.
+  -> Checks whether each date (day, month, year) is valid:
+     - Year between 1990 and 2030;
+     - Month between 1 and 12;
+     - Day within that month's allowed range.
+  -> Sets [esi+31] to 1 for a valid date and leaves it at 0 otherwise.
+  -> Continues until all ecx records have been processed.
+- Subtask 2:
+  -> compare decides whether two structures, v[i] and v[j], should be swapped.
+  -> Comparison order: valid events first, then chronological date, then lexicographical name for equal dates.
+  -> It returns 1 when a swap is needed and 0 otherwise.
+  -> swap exchanges two 36-byte structures one byte at a time.
+  -> sort_events compares each pair (i, j) with j > i and calls swap when compare returns 1.
 
-->Task 3:
-  ->Proceseaza sirul de caractere in grupuri de cate 3 octeti
-  ->Fiecare 3 biti se transforma in 4 caractere ASCII, folosite pentru reprezentarea datelor binare
-  ->Pentru fiecare grup:
-    -Extrage 6 biti din cei 3 octeti in 4 bucati de cate 6 biti
-    -Fiecare valoare de 6 biti este folosita ca index in tabelul alphabet, pentru a obtine un caracter
-    -Scrie cei 4 caractere in zona de iesire, avanseaza cu 3 în esi, 4 în edi
-  ->Repeta pana cand s-au procesat toti octetii
-  
-->Task 4:
--check_row(char* sudoku, int row)
-    -Verifica daca toate cifrele din randul row:
-        -Sunt intre 1 si 9
-        -Nu se repeta
-    -Returneaza:
-        1 - daca randul e valid
-        2 - daca e invalid
--check_column(char* sudoku, int column)
-    -Verifica daca toate cifrele din coloana column:
-        -Sunt intre 1 si 9
-        -Nu se repeta
-    -Returneaza:
-        1 - daca coloana e valid
-        2 - daca e invalid
--check_box(char* sudoku, int box)
-    -Primeste un pointer la tabla si indexul unui box de dimensiuni 3x3
-    -Determina randul si coloana de start al box-ului
-    -Verifica daca toate cele 9 pozitii din acea caseta:
-        -Contin cifre valide, fara repetari
-    -Returneaza:
-        1 - daca caseta e valida
-        2 - daca nu
-        
-Scuze daca am depasit putin limita de 80 de caractere pe rand :(
+Task 3:
+-> Processes the input byte string in groups of three bytes.
+-> Converts each group into four ASCII characters representing the binary data.
+-> Splits the 24 bits into four six-bit values.
+-> Uses each value as an index in the alphabet table.
+-> Writes four output characters, advances esi by three bytes and edi by four bytes, and repeats until the input is processed.
+
+Task 4:
+- check_row(char* sudoku, int row):
+  -> Checks that the row contains digits from 1 to 9 without repetitions.
+  -> Returns 1 for a valid row and 2 otherwise.
+- check_column(char* sudoku, int column):
+  -> Performs the same checks for a column.
+  -> Returns 1 for a valid column and 2 otherwise.
+- check_box(char* sudoku, int box):
+  -> Finds the starting row and column of a 3x3 box and checks all nine cells.
+  -> Returns 1 for a valid box and 2 otherwise.
+
+Sorry if I slightly exceeded the 80-character line limit.

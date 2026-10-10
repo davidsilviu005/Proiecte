@@ -1,10 +1,13 @@
 Task 1:
--Functia `sortari` sorteaza o lista simplu inlantuita de noduri in ordine crescatoare, fara a crea noduri noi. Parcurge nodurile date intr-un array si le leaga in ordine crescatoare, modificand direct pointerii next. Returneaza adresa noului cap al listei sortate.
+- The sortari function sorts a singly linked list in ascending order without creating new nodes. It places the existing nodes in an array, orders them, and reconnects their next pointers. It returns the new head of the sorted list.
+
 Task 2:
--Functia `get_words` primeste un sir de caractere si il separa in cuvinte, folosind delimitatorii " .,\n". Pentru fiecare cuvant gasit, salveaza adresa acestuia in vectorul words. Se folosește functia standard strtok pentru impartirea sirului si se repeta pana se extrag toate cuvintele sau se atinge limita number_of_words.
--Functia `sort` sorteaza un vector de cuvinte (char** words) folosind qsort. Criteriul de sortare este: mai intai dupa lungimea cuvintelor, iar daca doua cuvinte au aceeasi lungime, se compara lexicografic. Compararea este realizata de functia compare, care folosește strlen si strcmp.
+- The get_words function splits a character string into words using the delimiters " .,\n". It stores each word's address in the words array. It uses strtok until all words are extracted or number_of_words is reached.
+- The sort function sorts an array of words (char** words) with qsort. It orders words by length first, then lexicographically when lengths are equal. The compare function uses strlen and strcmp.
+
 Task 3:
--Functia `kfib` calculeaza termenul de pe pozitia n dintr-un sir generalizat de tip Fibonacci, numit k-Fibonacci, unde fiecare termen este suma celor k termeni anteriori. Daca n este mai mic decat k, functia returneaza 0. Daca n este egal cu 1, intoarce 1. In celelalte cazuri, functia foloseste recursivitate pentru a calcula suma tuturor valorilor kfib(n - i, k) pentru fiecare i de la 1 la k. Valoarea finala este returnata in registrul eax.
+- The kfib function calculates term n of a generalized k-Fibonacci sequence, in which each term is the sum of the previous k terms. It returns 0 when n is smaller than k and 1 when n equals k. Otherwise, it recursively sums kfib(n - i, k) for i from 1 to k. The result is returned in eax.
+
 Task 4:
--Functia `check_palindrome` verifica daca un sir de caractere este palindrom. Parcurge sirul simultan de la inceput si de la sfarsit, comparand caracterele corespunzatoare. Daca toate se potrivesc, returneaza 1. Daca gaseste o diferenta, intoarce 0.
--Functia `composite_palindrome` genereaza toate combinatiile posibile de concatenari de cuvinte dintr-o lista si verifica daca rezultatul este un palindrom. Daca gaseste un palindrom valid, retine cel mai lung sau, in caz de egalitate, cel mai mic lexicografic. Foloseste functii precum `check_palindrome`, `strlen`, `strcmp`, si `strdup`, iar rezultatul final este returnat ca string duplicat.
+- The check_palindrome function checks whether a string is a palindrome by comparing characters from both ends. It returns 1 when all pairs match and 0 otherwise.
+- The composite_palindrome function builds word concatenations from a list and checks which are palindromes. It keeps the longest valid palindrome or, for equal lengths, the lexicographically smallest one. It uses check_palindrome, strlen, strcmp, and strdup, and returns a duplicated result string.

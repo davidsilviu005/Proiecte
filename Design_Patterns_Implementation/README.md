@@ -1,33 +1,33 @@
-->Sistemul gestioneaza:
-  - servere (cu status, locatie si owner)
-  - grupuri de resurse asociate unui server (identificate prin IP)
-  - membri in grupuri
-  - alerte asociate unui server (tip, severitate, mesaj)
+-> The system manages:
+  - servers, including status, location, and owner;
+  - resource groups associated with a server and identified by IP;
+  - members within groups;
+  - alerts associated with a server, including type, severity, and message.
 
-->Clase principale
-  - Main – alege fluxul in functie de PathTypes si ruleaza procesul potrivit
-  - CommandFileReader – citeste din fisier si parseaza header + linii, produce o lista de CommandRow
-  - CommandRow – un rand de comanda: command, params (map cheie-valoare)
-  - Database – stocare in memorie pentru servere, grupuri si alerte
-  - ServerCommandProcessor – executa comenzi pentru servere
-  - GroupCommandProcessor – executa comenzi pentru grupuri si membri
-  - EventCommandProcessor – executa comenzi pentru evenimente/alerte
+-> Main classes:
+  - Main chooses the workflow from PathTypes and runs the corresponding process.
+  - CommandFileReader reads a file, parses its header and lines, and produces CommandRow objects.
+  - CommandRow represents one command and its key-value parameters.
+  - Database stores servers, groups, and alerts in memory.
+  - ServerCommandProcessor handles server commands.
+  - GroupCommandProcessor handles groups and members.
+  - EventCommandProcessor handles events and alerts.
 
-Colectii folosite
-  - Map pentru acces rapid dupa IP (servere si grupuri)
-  - Set pentru alerte (colectie de alerte)
-  - List pentru lista de observatori (listeneri) in Observer pattern
+Collections used:
+  - Map provides fast lookup by IP for servers and groups.
+  - Set stores alerts.
+  - List stores the alert observers.
 
-Design pattern-uri implementate:
+Design patterns implemented:
 1) Singleton
-  - Database are o singura instanta in toata aplicatia (accesata prin getInstance())
+  - Database exposes one instance through getInstance().
 
 2) Factory
-  - UserFactory creeaza tipul corect de user (User / Admin / Operator) pe baza campurilor disponibile din input
+  - UserFactory creates a User, Admin, or Operator from the available input fields.
 
 3) Builder
-  - Server.Builder permite construirea unui server cu campuri optionale fara constructori lungi
+  - Server.Builder constructs a server with optional fields without a long constructor.
 
 4) Observer
-  - Server este subject si notifica listenerii (AlertListener)
-  - ResourceGroup este observer (listener) si primeste alerta prin onAlert()
+  - Server is the subject and notifies AlertListener objects.
+  - ResourceGroup is a listener and receives alerts through onAlert().

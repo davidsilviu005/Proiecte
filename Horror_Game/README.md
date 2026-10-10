@@ -1,71 +1,71 @@
 # RGD Horror Story
 
-**Un proiect horror 3D realizat în Unity de o echipă de cinci membri.** Explorează, caută indicii și resurse, gestionează lumina lanternei și păstrează-ți luciditatea într-un mediu construit pentru suspans.
+**A 3D horror project built in Unity by a team of five.** Explore, collect clues and supplies, manage your flashlight, and protect your sanity in an atmosphere designed around suspense.
 
 > [!NOTE]
-> Proiectul este în dezvoltare. Scena `SampleScene` configurată în Build Settings este momentan o scenă de bază; sistemele de joc se află în cod și în asseturile proiectului, dar depozitul nu include încă un nivel final gata de jucat.
+> This project is in development. The `SampleScene` configured in Build Settings is currently a basic scene. The gameplay systems are present in the project's code and assets, but this repository does not yet include a finished playable level.
 
-## Despre proiect
+## About the project
 
-RGD Horror Story combină explorarea la persoana întâi cu mecanici de supraviețuire și investigație. Jucătorul poate interacționa cu obiecte din apropiere, aduna indicii, baterii, pastile și chei, apoi folosi resursele pentru a progresa. Întunericul afectează nivelul de luciditate, iar lanterna are o baterie limitată.
+RGD Horror Story combines first-person exploration with survival and investigation mechanics. The player can interact with nearby objects, collect clues, batteries, pills, and keys, and use these resources to progress. Darkness affects sanity, while the flashlight has a limited battery.
 
-### Sisteme implementate
+### Implemented systems
 
-- **Explorare și interacțiune:** interacțiune cu obiecte și uși prin raycast.
-- **Inventar:** evidența bateriilor, pastilelor și cheilor colectate.
-- **Lanternă și luciditate:** consumul bateriei, reîncărcare și efecte vizuale asociate scăderii nivelului de luciditate.
-- **Indicii:** colectare și afișare într-un meniu dedicat.
-- **Uși și chei:** uși care pot necesita o anumită cheie.
-- **Salvare și încărcare:** poziția jucătorului, resursele, indiciile, cheile și progresul unor evenimente audio sunt stocate local în JSON.
-- **Interfață:** meniuri de start, pauză, salvare/încărcare și setări audio.
+- **Exploration and interaction:** raycast-based interaction with objects and doors.
+- **Inventory:** tracks collected batteries, pills, and keys.
+- **Flashlight and sanity:** battery drain, recharging, and visual effects as sanity decreases.
+- **Clues:** collection and display in a dedicated menu.
+- **Doors and keys:** doors can require a specific key.
+- **Save and load:** player position, resources, clues, keys, and progress through certain audio events are stored locally in JSON.
+- **Interface:** start, pause, save/load, and audio settings menus.
 
-## Tehnologii
+## Technologies
 
 - **Unity:** `6000.3.19f1`
-- **Limbaj:** C#
-- **Randare:** Universal Render Pipeline (URP)
-- **Pachete relevante:** Input System, AI Navigation, TextMesh Pro și Unity UI
+- **Language:** C#
+- **Rendering:** Universal Render Pipeline (URP)
+- **Relevant packages:** Input System, AI Navigation, TextMesh Pro, and Unity UI
 
-## Cum deschizi proiectul
+## Open the project
 
-1. Clonează depozitul folosind adresa afișată de butonul **Code** de pe GitHub sau descarcă arhiva ZIP.
-2. Deschide **Unity Hub** și alege **Add project from disk**.
-3. Selectează folderul clonat și deschide-l cu **Unity 6000.3.19f1**.
-4. Așteaptă importul asseturilor și al pachetelor. Scena inclusă în Build Settings este `Assets/Scenes/SampleScene.unity`.
+1. Clone the repository using the URL under GitHub's **Code** button, or download its ZIP archive.
+2. Open **Unity Hub** and choose **Add project from disk**.
+3. Select the `Horror_Game` folder and open it with **Unity 6000.3.19f1**.
+4. Wait for assets and packages to import. The scene included in Build Settings is `Assets/Scenes/SampleScene.unity`.
 
-> Pentru a obține un nivel jucabil, mecanicile din `Assets/Scripts/` trebuie configurate într-o scenă de joc. Scena inclusă momentan nu reprezintă o versiune finală.
+> To obtain a playable level, the mechanics in `Assets/Scripts/` must be configured in a gameplay scene. The included scene is not a final version.
 
-## Comenzi prevăzute de scripturi
+## Controls defined in the scripts
 
-| Acțiune | Tastă |
+| Action | Key |
 | --- | --- |
-| Deplasare | `W` `A` `S` `D` |
-| Privire în jur | Mouse |
-| Interacțiune | `E` |
-| Lanternă pornit/oprit | `F` |
-| Schimbă bateria lanternei | `R` |
-| Folosește o pastilă | `Q` |
-| Vezi inventarul | `Tab` |
-| Deschide lista de indicii | `C` |
-| Meniu de pauză | `M` |
-| Meniu salvare/încărcare | `Esc` |
+| Move | `W` `A` `S` `D` |
+| Look around | Mouse |
+| Interact | `E` |
+| Toggle flashlight | `F` |
+| Replace flashlight battery | `R` |
+| Use a pill | `Q` |
+| View inventory | `Tab` |
+| Open clues menu | `C` |
+| Pause menu | `M` |
+| Save/load menu | `Esc` |
 
-Disponibilitatea comenzilor depinde de configurarea scenei și a componentelor corespunzătoare.
+Control availability depends on how the scene and its components are configured.
 
-## Structura proiectului
+## Project structure
 
 ```text
 Assets/
-├── Scenes/              # Scenele Unity
-├── Scripts/             # Sistemele de joc și interfața
-├── UI/                  # Elemente pentru interfață
-├── TexturesRGD/         # Texturi folosite de proiect
-└── ...                  # Alte asseturi și pachete importate
-Packages/                # Dependențele Unity
-ProjectSettings/          # Configurația proiectului
+├── Scenes/              # Unity scenes
+├── Scripts/             # Gameplay systems and interface
+├── UI/                  # Interface elements
+├── TexturesRGD/         # Project textures
+└── ...                  # Other imported assets and packages
+Packages/                # Unity dependencies
+ProjectSettings/          # Project configuration
 ```
 
-## Echipa
+## Team
 
 - David Silviu
 - Argatu Ioan-Dinu
@@ -73,6 +73,6 @@ ProjectSettings/          # Configurația proiectului
 - Nicolae Theodor
 - Ghiduc Alexandru
 
-## Asseturi externe
+## External assets
 
-Depozitul conține și asseturi importate de la terți. Drepturile asupra acestora aparțin autorilor lor; verifică documentația și licențele fiecărui pachet înainte de redistribuire.
+This repository includes imported third-party assets. Their respective creators retain the rights to them; check each package's documentation and license before redistribution.

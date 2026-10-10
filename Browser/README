@@ -1,86 +1,86 @@
-Funcții și scopul lor:
+Functions and their purpose:
 
 creeaza_pagina()
--Ce face: creează o pagină web cu ID, URL și descriere.
--De ce: e folosită pentru a construi vectorul de pagini la început și pentru pagina implicită.
+- What it does: creates a web page with an ID, URL, and description.
+- Why: used to build the initial page array and the default page.
 
 distruge_pagina()
--Ce face: eliberează memoria unei pagini.
--De ce: evită memory leaks, important pentru Valgrind.
+- What it does: frees the memory allocated for a page.
+- Why: prevents memory leaks, which is important for Valgrind checks.
 
 creeaza_stiva()
--Ce face: creează o stivă goală.
--De ce: e folosită pentru a ține istoricul „înainte” și „înapoi” al taburilor.
+- What it does: creates an empty stack.
+- Why: stores a tab's back and forward history.
 
 push()
--Ce face: adaugă o pagină în vârful stivei.
--De ce: folosită când navigăm la o pagină nouă sau folosim BACKWARD / FORWARD.
+- What it does: adds a page to the top of a stack.
+- Why: used when visiting a new page or using BACKWARD / FORWARD.
 
 pop()
--Ce face: scoate și returnează pagina din vârful stivei.
--De ce: pentru a merge înapoi/înainte în istoric.
+- What it does: removes and returns the page at the top of a stack.
+- Why: moves backward or forward through history.
 
 e_gol()
--Ce face: verifică dacă o stivă e goală.
--De ce: pentru a preveni accesul invalid în BACKWARD / FORWARD.
+- What it does: checks whether a stack is empty.
+- Why: prevents invalid access during BACKWARD / FORWARD.
 
 curata_stiva()
--Ce face: golește complet stiva.
--De ce: se folosește când se încarcă o pagină nouă — istoricul „înainte” se șterge.
+- What it does: clears a stack.
+- Why: loading a new page clears the forward history.
 
 distruge_stiva()
--Ce face: curăță și eliberează stiva.
--De ce: pentru eliberarea completă a memoriei unui tab.
+- What it does: clears and frees a stack.
+- Why: releases all memory used by a tab's history.
 
 afiseaza_stiva()
--Ce face: afișează URL-urile dintr-o stivă în ordine inversă.
--De ce: pentru comanda PRINT_HISTORY.
+- What it does: prints the URLs in a stack in reverse order.
+- Why: supports the PRINT_HISTORY command.
 
 creeaza_tab()
--Ce face: creează un tab nou, cu pagina implicită și stive goale.
--De ce: folosit de NEW_TAB.
+- What it does: creates a tab with the default page and empty history stacks.
+- Why: supports NEW_TAB.
 
 distruge_tab()
--Ce face: eliberează toate stivele și memoria unui tab.
--De ce: se folosește în CLOSE și la final pentru cleanup.
+- What it does: frees a tab and its history stacks.
+- Why: used by CLOSE and during final cleanup.
 
 creeaza_browser()
--Ce face: creează un browser cu o listă circulară de taburi și pagina implicită.
--De ce: initializează structura principală a aplicației.
+- What it does: initializes a browser with a circular list of tabs and a default page.
+- Why: creates the application's main data structure.
 
 gaseste_tab()
--Ce face: caută un tab după ID.
--De ce: folosit în OPEN și PRINT_HISTORY.
+- What it does: finds a tab by ID.
+- Why: used by OPEN and PRINT_HISTORY.
 
 tab_nou()
--Ce face: adaugă un nou tab la finalul listei și îl setează ca activ.
--De ce: implementare NEW_TAB.
+- What it does: appends a tab and makes it active.
+- Why: implements NEW_TAB.
 
 inchide_tab()
--Ce face: închide tabul curent, cu excepția tabului 0.
--De ce: implementare CLOSE.
+- What it does: closes the current tab, except for tab 0.
+- Why: implements CLOSE.
 
 afiseaza_tab()
--Ce face: afișează toate taburile începând cu cel curent și descrierea paginii curente.
--De ce: implementare PRINT.
+- What it does: prints all tabs starting with the active one and the current page's description.
+- Why: implements PRINT.
 
 afiseaza_istoric()
--Ce face: afișează istoricul complet (inainte, pagina curentă, inapoi) al unui tab.
--De ce: implementare PRINT_HISTORY.
+- What it does: prints a tab's complete backward, current, and forward history.
+- Why: implements PRINT_HISTORY.
 
 schimba_pagina()
--Ce face: încarcă o pagină nouă în tabul curent, adăugând pagina curentă în istoricul „înapoi” și golind „înainte”.
--De ce: implementare PAGE.
+- What it does: loads a new page in the current tab, saves the old page in backward history, and clears forward history.
+- Why: implements PAGE.
 
 inapoi()
--Ce face: merge la pagina anterioară din istoric.
--De ce: implementare BACKWARD.
+- What it does: moves to the previous page in history.
+- Why: implements BACKWARD.
 
 inainte()
--Ce face: revine la o pagină recent vizitată după ce s-a folosit `BACKWARD`.
--De ce: implementare FORWARD.
+- What it does: returns to a recently visited page after BACKWARD.
+- Why: implements FORWARD.
 
-În main()
--Citire pagini din input -> creeaza_pagina
--Executare comenzilor -> NEW_TAB, CLOSE, PAGE, BACKWARD, etc.
--Eliberare memorie la final -> pentru pagini, taburi și browser.
+In main()
+- Reads pages from input using creeaza_pagina.
+- Executes commands such as NEW_TAB, CLOSE, PAGE, and BACKWARD.
+- Frees pages, tabs, and the browser before exiting.
