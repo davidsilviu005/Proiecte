@@ -1,0 +1,13 @@
+Subiect 2:
+-am implementat cautarea LPM cu trie, nu liniar prin toata tabela de rutare
+-la inceput am construit trie-ul din toate rutele, inserand fiecare prefix bit cu bit, in functie de masca
+-cand primesc un pachet, caut in trie folosind bitii din adresa destinatie si pastrez ultima ruta valida gasita
+-in felul asta obtin cel mai lung prefix care se potriveste
+-avantajul este ca nu mai caut in toata tabela, ci fac maxim 32 de pasi pentru un IP IPv4, deci cautarea este mult mai eficienta
+
+Subiect 1+3:
+-am dat doua pinguri de la h1 la h2, iar din primul ping se observa broadcast-ul de ARP, iar a doua oara cand am dat ping nu mai este prezent pentru ca adresa mac a fost salvata a lui r1
+
+Subiectul 4:
+-am dat doua pinguri. Primul ping e setat cu TTL = 1, iar asta inseamna ca in momentul in care ajunge la interfata r1, aceasta o sa decrementeze TTL-ul care o sa ajunga pe 0 si o sa trimita inapoi
+pachet ICMP special. Al doilea ping are o adresa care nu exista in tabela de rutare a lui router0, prin urmare o sa trimita inapoi un pachet cu Destination Unreachable

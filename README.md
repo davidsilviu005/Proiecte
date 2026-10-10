@@ -8,6 +8,8 @@ A collection of university coursework and personal software projects by [David S
 | --- | --- | --- |
 | [Cheese Heist](CheeseHeist/) | A playable maze game with procedural generation, genetic level evolution, and a Q-learning agent | Python, Pygame |
 | [Chess](chess/) | A C++ move engine and minimax opponent with a Pygame interface | C++, Python, Pygame |
+| [IPv4 Router](IPv4_Router_Trie_ARP_ICMP/) | Packet forwarding with trie-based routing, ARP resolution, and ICMP responses | C, Linux |
+| [Reliable UDP Transport](Reliable_UDP_Transport_CPP/) | A UDP reliability layer with acknowledgments, retransmission, and ordered delivery | C++, Linux |
 | [Smart Study Assistant](Smart_Assistant/) | A desktop task and notes organizer with local storage and optional note summarization | Python, Tkinter, SQLite |
 | [Energy Network Simulation](Simulation_of_Energy_Network/) | A command-driven power grid model with producers, consumers, batteries, and blackouts | Java |
 | [Python Games Interface](Python_Games_interface/) | A desktop launcher for six small games, with local leaderboards | Python, Tkinter |
@@ -39,7 +41,12 @@ Screenshots were captured from the running applications. The study assistant pre
 - [CLI Games in C](CLI_Games_In_C/) — terminal games written in C.
 - [Slots Machine](Slots_machine/) — slot machine program in C.
 
-### Algorithms, systems, and simulations
+### Networking and systems
+
+- [IPv4 Router with Trie-Based Routing](IPv4_Router_Trie_ARP_ICMP/) — Linux router with longest-prefix matching, ARP resolution, packet queueing, and ICMP responses.
+- [Reliable UDP Transport Layer](Reliable_UDP_Transport_CPP/) — C++ sender and receiver library with a working loopback demo.
+
+### Algorithms and simulations
 
 - [Energy Network Simulation](Simulation_of_Energy_Network/) — Java simulation of an energy grid.
 - [Data Structures Implementations](DSA_Structures_Implementations/) — C data structure exercises.
@@ -49,6 +56,15 @@ Screenshots were captured from the running applications. The study assistant pre
 - [Working with Data in MATLAB](Working_With_Data_Matlab/) — data analysis exercises.
 - [Minecraft Theme: Chunk Gravity Processing](Minecraft_Theme_Chunk_Gravity_Processing/) — chunk processing coursework.
 - [Browser](Browser/) — C programming coursework.
+
+### Functional programming
+
+- [Checkout Queue Simulation](Racket_Checkout_Queue_Simulation/) — four Racket stages covering customer assignment, time progression, queue abstraction, and counter opening or closing.
+- [Graph Algorithms and Algebraic Graphs](Haskell_Graph_Algorithms/) — four Haskell stages covering traversal, algebraic graphs, modular decomposition, and folds.
+
+### Embedded systems
+
+- [Arduino Temperature and Distance Monitor](Arduino_Temperature_Distance_Monitor/) — reads TMP36 and HC-SR04 sensors and displays measurements on an LCD.
 
 ### Low-level programming
 

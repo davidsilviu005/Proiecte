@@ -1,0 +1,4 @@
+*.o
+*.a
+examples/udp_sender
+examples/udp_receiver
