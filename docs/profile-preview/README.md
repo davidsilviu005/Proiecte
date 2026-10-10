@@ -6,6 +6,7 @@ I'm a computer science student who enjoys algorithms, desktop applications, and 
 
 | Project | What I built |
 | --- | --- |
+| [Cheese Heist](https://github.com/davidsilviu005/Proiecte/tree/main/CheeseHeist) | A Python/Pygame maze game with procedural generation, genetic level evolution, and Q-learning, developed with Andreea Radu. |
 | [Chess](https://github.com/davidsilviu005/Proiecte/tree/main/chess) | A C++ chess engine with a Python/Pygame interface and a minimax opponent. |
 | [Smart Study Assistant](https://github.com/davidsilviu005/Proiecte/tree/main/Smart_Assistant) | A Tkinter app for tasks and notes, backed by SQLite. |
 | [Energy Network Simulation](https://github.com/davidsilviu005/Proiecte/tree/main/Simulation_of_Energy_Network) | A Java simulation of producers, consumers, batteries, and blackouts. |

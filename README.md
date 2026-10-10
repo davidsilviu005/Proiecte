@@ -6,6 +6,7 @@ A collection of university coursework and personal software projects by [David S
 
 | Project | What it demonstrates | Stack |
 | --- | --- | --- |
+| [Cheese Heist](CheeseHeist/) | A playable maze game with procedural generation, genetic level evolution, and a Q-learning agent | Python, Pygame |
 | [Chess](chess/) | A C++ move engine and minimax opponent with a Pygame interface | C++, Python, Pygame |
 | [Smart Study Assistant](Smart_Assistant/) | A desktop task and notes organizer with local storage and optional note summarization | Python, Tkinter, SQLite |
 | [Energy Network Simulation](Simulation_of_Energy_Network/) | A command-driven power grid model with producers, consumers, batteries, and blackouts | Java |
@@ -15,6 +16,10 @@ A collection of university coursework and personal software projects by [David S
 Open a project folder for its code, features, and setup instructions. The projects are independent; there is no single build command for this repository.
 
 ## Previews
+
+**Cheese Heist — generated maze and gameplay view**
+
+<img src="docs/images/cheese-heist-game.png" width="760" alt="Cheese Heist gameplay with a generated maze and mission sidebar">
 
 | Python Games Interface | Smart Study Assistant |
 | --- | --- |
@@ -26,6 +31,7 @@ Screenshots were captured from the running applications. The study assistant pre
 
 ### Applications and games
 
+- [Cheese Heist](CheeseHeist/) — a procedural maze game with manual play and algorithmic game modes, built with Andreea Radu.
 - [Chess](chess/) — C++ chess engine with a Python interface.
 - [Smart Study Assistant](Smart_Assistant/) — desktop tasks, notes, and optional AI summarization.
 - [Python Games Interface](Python_Games_interface/) — a launcher for Tic Tac Toe, Snake, Minesweeper, 2048, Flappy Bird, and Memory Match.

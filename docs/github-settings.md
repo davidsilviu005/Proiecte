@@ -1,16 +1,16 @@
 # GitHub presentation settings
 
-These GitHub settings cannot be previewed through a Git branch. Apply them after reviewing and merging this branch.
+Current repository presentation details for [Proiecte](https://github.com/davidsilviu005/Proiecte).
 
 ## Repository About
 
 **Description:** University and personal projects in C, C++, Python, Java, Assembly, MATLAB, and Unity.
 
-**Topics:** `portfolio`, `university-projects`, `cpp`, `python`, `java`, `unity`
+**Topics:** `portfolio`, `university-projects`, `cpp`, `python`, `java`, `unity`, `pygame`
 
 ## Profile README
 
-Copy [profile-preview/README.md](profile-preview/README.md) into the root of a public repository named `davidsilviu005`. GitHub will then display it on the profile. The links in that file point to the `main` branch, so wait until this branch has been approved and merged.
+The [public profile](https://github.com/davidsilviu005) uses the README from the `davidsilviu005` repository. [profile-preview/README.md](profile-preview/README.md) is the copy kept alongside this collection; update both when changing featured projects.
 
 ## Next showcase steps
 
